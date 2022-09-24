@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "find.skorulis.com",
+        "brief": "App to update my location when I move and website to publically share it. Also keeps track of the current beer I'm drinking.",
+        "status": "live"
+    },
+    {
+        "id": 2,
+        "name": "projects.skorulis.com",
+        "brief": "This website to display current projects",
+        "status": "started"
+    }
+]

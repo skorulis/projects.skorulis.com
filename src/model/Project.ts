@@ -3,6 +3,13 @@ export interface Project {
     name: string
     brief: string
     status: string
-    startDate: string
     sourceCode?: string
+}
+
+export enum Status {
+    idea = "idea",
+    started = "started",
+    live = "live",
+    hiatus = "hiatus",
+    abandoned = "abandoned"
 }

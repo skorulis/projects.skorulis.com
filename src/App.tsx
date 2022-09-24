@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ProjectList } from './scene/ProjectList';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <p>
           Under construction
         </p>
+        <ProjectList />
       </header>
     </div>
   );
