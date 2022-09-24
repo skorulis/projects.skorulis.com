@@ -1,19 +1,13 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import { ProjectList } from './scene/ProjectList';
+import { Header } from "./scene/Header"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Projects by skorulis
-        </h1>
-        <p>
-          Under construction
-        </p>
-        <ProjectList />
-      </header>
+    <div>
+      <Header />
+      <ProjectList />
     </div>
   );
 }
