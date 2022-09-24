@@ -5,9 +5,11 @@ import { Header } from "./scene/Header"
 
 function App() {
   return (
-    <div>
+    <div className='main'>
       <Header />
-      <ProjectList />
+      <div className='page-content'>
+        <ProjectList />
+      </div>
     </div>
   );
 }
