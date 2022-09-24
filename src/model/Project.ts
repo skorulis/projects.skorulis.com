@@ -3,7 +3,12 @@ export interface Project {
     name: string
     brief: string
     status: string
-    sourceCode?: string
+    sourceCode?: SourceCode[]
+}
+
+export interface SourceCode {
+    title: string
+    url: string
 }
 
 export enum Status {

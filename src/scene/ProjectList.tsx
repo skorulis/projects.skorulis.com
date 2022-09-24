@@ -10,6 +10,8 @@ export class ProjectList extends Component<{}, {}> {
         super(props);
     }
 
+    // Rendering
+
     render() {
         return <div>
             <h1>Project list</h1>
@@ -19,6 +21,8 @@ export class ProjectList extends Component<{}, {}> {
         </div>
         
     }
+
+    // Computed values
 
     projects(): Project[] {
         return data

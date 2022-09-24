@@ -3,12 +3,28 @@
         "id": 1,
         "name": "find.skorulis.com",
         "brief": "App to update my location when I move and website to publically share it. Also keeps track of the current beer I'm drinking.",
-        "status": "live"
+        "status": "live",
+        "sourceCode": [
+            {
+                "title": "Website",
+                "url": "https://github.com/skorulis/find-skorulis-react"
+            },
+            {
+                "title": "iOS app",
+                "url": "https://github.com/skorulis/find-skorulis-ios"
+            }
+        ]
     },
     {
         "id": 2,
         "name": "projects.skorulis.com",
         "brief": "This website to display current projects",
-        "status": "started"
+        "status": "started",
+        "sourceCode": [
+            {
+                "title": "Website",
+                "url": "https://github.com/skorulis/projects.skorulis.com"
+            }
+        ]
     }
 ]
