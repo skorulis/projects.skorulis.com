@@ -31,6 +31,7 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
             <img src={this.props.project.icon} width={64} className="logoColor" />
             <div >
                 <h2><span className="number">{this.numberString()}</span> {this.props.project.name}</h2>
+                <p>Status: <b>{this.props.project.status}</b></p>
                 <p>{this.props.project.shortBrief}</p>
             </div>
         

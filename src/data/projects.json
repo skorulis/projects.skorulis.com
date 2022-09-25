@@ -25,9 +25,9 @@
         "name": "projects.skorulis.com",
         "shortBrief": "Everything I'm working on",
         "brief": "This website to display the various projects that I'm working on.",
-        "status": "started",
+        "status": "live",
         "tech": "* React",
-        "nextSteps": "* Make it not look shit",
+        "nextSteps": "* Make this site look less shit",
         "sourceCode": [
             {
                 "title": "Website",
