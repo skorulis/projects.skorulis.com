@@ -6,6 +6,7 @@ import { Project } from "../model/Project"
 import ReactMarkdown from 'react-markdown'
 import data from "../data/projects.json"
 import githubLogo from "./github-icon.png"
+import { ProjectImage } from "./ProjectImage";
 
 type ProjectDetailsProps = {
     id: number
@@ -43,7 +44,7 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {}> {
         }
         return <div style={containerStyle}>
             <div style={topRowStyle}>
-                <img src={project.icon} width={64} className="logoColor" />
+                <ProjectImage url={project.icon} />
                 <h2><span className="number">{this.numberString()}</span> {project.name}</h2>
             </div>
             {this.section("Brief", project.brief)}

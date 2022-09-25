@@ -7,7 +7,7 @@
         "brief": "This consists of 2 parts, an app that posts my location whenever I move and a website which allows people to know where I am. Also in case anyone wants to catch up for a drink it also calls out when I'm enjoying a beer",
         "status": "live",
         "nextSteps": "* Change the location marker when drinking",
-        "tech": "* SwiftUI\n* React",
+        "tech": "* SwiftUI\n* React\n* Firebase",
         "sourceCode": [
             {
                 "title": "Website",
@@ -27,11 +27,27 @@
         "brief": "This website to display the various projects that I'm working on.",
         "status": "live",
         "tech": "* React",
-        "nextSteps": "* Make this site look less shit",
+        "nextSteps": "* Make this site look less shit\n* Add dates around when things started or were updated\n* Add historical screenshots",
         "sourceCode": [
             {
                 "title": "Website",
                 "url": "https://github.com/skorulis/projects.skorulis.com"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "icon": "/icons/project3.png",
+        "name": "Big album of beers",
+        "shortBrief": "Photographic evidence of every beer I've tried",
+        "brief": "I originally started logging the beers I had tried in facebook albums, this continues but is unwieldy to browse multiple facebook albums. BAOB scrapes all the images and data from facebook and collects it together into a single website for easy browsing. Once it has the data from facebook it pulls more info from Untappd in order to generate statistics on the beers",
+        "status": "live",
+        "tech": "* Ruby\n* Jekyll\n* Facebook\n* Untappd",
+        "nextSteps": "* Keep uploading beers",
+        "sourceCode": [
+            {
+                "title": "Website/Scripts",
+                "url": "https://github.com/skorulis/BigAlbumOfBeers"
             }
         ]
     }

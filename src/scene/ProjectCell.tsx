@@ -6,6 +6,7 @@ import { Color } from "../Theme"
 import {
     Link as RouteLink
   } from "react-router-dom";
+import { ProjectImage } from "./ProjectImage";
 
 type ProjectCellProps = {
     project: Project
@@ -28,12 +29,13 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
 
     content() {
         return <div style={containerStyle}>
-            <img src={this.props.project.icon} width={64} className="logoColor" />
+            <ProjectImage url={this.props.project.icon} />
             <div >
                 <h2><span className="number">{this.numberString()}</span> {this.props.project.name}</h2>
                 <p>Status: <b>{this.props.project.status}</b></p>
                 <p>{this.props.project.shortBrief}</p>
             </div>
+            <img src={"assets/chevron.svg"} width={32} className="logoColor" style={arrowStyle}  />
         
         </div>
     }
@@ -62,4 +64,9 @@ const logoStyle: CSS.Properties = {
     mask: "url(icons/project1.svg) no-repeat center",
     width: "40px",
     height: "40px"
+}
+
+const arrowStyle: CSS.Properties = {
+    marginLeft: "auto",
+    marginRight: "10px"
 }
