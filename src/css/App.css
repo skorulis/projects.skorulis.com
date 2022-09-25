@@ -5,4 +5,10 @@
 .page-content {
   border-radius: 20;
   background-color: #27292a;
+  margin: 20px;
+  padding: 20px;
+}
+
+a {
+  color: white;
 }

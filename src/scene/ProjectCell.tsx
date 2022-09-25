@@ -18,7 +18,8 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
     render() {
         return <div style={containerStyle}>
             <h3>{this.numberString()} {this.props.project.name}</h3>
-            <p>{this.props.project.brief}</p>
+            {this.section("Brief", this.props.project.brief)}
+            {this.section("Next", this.props.project.nextSteps)}
             {this.maybeSources()}
         </div>
         
@@ -30,11 +31,29 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
             return
         }
         let items = sources.map( (source) => {
-            return <a href={source.url} > <img src={githubLogo} width={30} /> {source.title}</a>
+            return <a href={source.url}>
+                <div style={sourceLink} >
+                    <img src={githubLogo} width={20} /> 
+                    {source.title}
+                </div>
+            </a>
+            
+            
         })
+        return <div>
+            <h3>Sources</h3>
+            <div style={sourcesContainer}>
+                {items}
+            </div>
+        </div>
 
-        return <div style={containerStyle}>
-            {items}
+        return 
+    }
+
+    section(title: string, body: string) {
+        return <div>
+            <h3>{title}</h3>
+            <p>{body}</p>
         </div>
     }
 
@@ -49,5 +68,19 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
 const containerStyle: CSS.Properties = {
     display: "flex",
     flexDirection: "column",
-    alignItems: "start"
+    alignItems: "start",
+    border: "solid 1px"
+}
+
+const sourcesContainer: CSS.Properties = {
+    display: "flex",
+    flexDirection: "row",
+    gap: "20px"
+}
+
+const sourceLink: CSS.Properties = {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: "10px"
 }

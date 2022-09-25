@@ -3,6 +3,7 @@ export interface Project {
     name: string
     brief: string
     status: string
+    nextSteps: string
     sourceCode?: SourceCode[]
 }
 

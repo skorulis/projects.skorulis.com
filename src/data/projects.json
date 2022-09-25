@@ -2,8 +2,9 @@
     {
         "id": 1,
         "name": "find.skorulis.com",
-        "brief": "App to update my location when I move and website to publically share it. Also keeps track of the current beer I'm drinking.",
+        "brief": "This consists of 2 parts, an app that posts my location whenever I move and a website which allows people to know where I am. Also in case anyone wants to catch up for a drink it also calls out when I'm enjoying a beer",
         "status": "live",
+        "nextSteps": "Change the location marker when drinking",
         "sourceCode": [
             {
                 "title": "Website",
@@ -18,8 +19,9 @@
     {
         "id": 2,
         "name": "projects.skorulis.com",
-        "brief": "This website to display current projects",
+        "brief": "This website to display the various projects that I'm working on.",
         "status": "started",
+        "nextSteps": "Make it not look shit",
         "sourceCode": [
             {
                 "title": "Website",
