@@ -2,6 +2,7 @@ import { Component } from "react";
 import { Project } from "../model/Project";
 import CSS from 'csstype';
 import githubLogo from "./github-icon.png"
+import ReactMarkdown from 'react-markdown'
 
 type ProjectCellProps = {
     project: Project
@@ -53,7 +54,7 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
     section(title: string, body: string) {
         return <div>
             <h3>{title}</h3>
-            <p>{body}</p>
+            <ReactMarkdown children={body} />
         </div>
     }
 

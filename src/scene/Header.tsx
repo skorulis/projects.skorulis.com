@@ -13,7 +13,7 @@ export class Header extends Component<{}, {}> {
     render() {
         return <header style={containerStyle}>
             <h1 style={headerLabel}>
-                Projects
+                <a href="/">Projects</a>
             </h1>
       </header>
     }
