@@ -2,9 +2,7 @@
   color: white;
 }
 
-.page-content {
-  border-radius: 20;
-  background-color: #27292a;
+.pageContent {
   margin: 20px;
   padding: 20px;
 }
@@ -12,4 +10,8 @@
 a {
   color: white;
   text-decoration: none;
+}
+
+.logoColor {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(147deg) brightness(104%) contrast(106%);
 }

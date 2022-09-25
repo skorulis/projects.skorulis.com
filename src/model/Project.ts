@@ -1,6 +1,8 @@
 export interface Project {
     id: Number
+    icon: string
     name: string
+    shortBrief: string
     brief: string
     status: string
     nextSteps: string

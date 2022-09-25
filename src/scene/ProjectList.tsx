@@ -16,10 +16,11 @@ export class ProjectList extends Component<{}, {}> {
     render() {
         return <div>
             <Header />
-            <h1>Project list</h1>
-            {this.projects().map( (proj) =>
-                <ProjectCell project={proj}  />
-            )} 
+            <div className="pageContent">
+                {this.projects().map( (proj) =>
+                    <ProjectCell project={proj}  />
+                )} 
+            </div>
         </div>
         
     }

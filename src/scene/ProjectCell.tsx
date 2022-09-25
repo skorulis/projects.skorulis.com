@@ -3,6 +3,11 @@ import { Project } from "../model/Project";
 import CSS from 'csstype';
 import githubLogo from "./github-icon.png"
 import ReactMarkdown from 'react-markdown'
+import { Color } from "../Theme"
+
+import {
+    Link as RouteLink
+  } from "react-router-dom";
 
 type ProjectCellProps = {
     project: Project
@@ -17,13 +22,30 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
     // Rendering
 
     render() {
+        let link = `/project/${this.props.project.id}`
+        return <RouteLink to={link} >
+            {this.content()}
+        </RouteLink>
+    }
+
+    content() {
         return <div style={containerStyle}>
+            <img src={this.props.project.icon} width={64} className="logoColor" />
+            <div >
+                <h2>{this.numberString()} {this.props.project.name}</h2>
+                <p>{this.props.project.shortBrief}</p>
+            </div>
+        
+        </div>
+    }
+
+    oldParts() {
+        return <div>
             <h3>{this.numberString()} {this.props.project.name}</h3>
             {this.section("Brief", this.props.project.brief)}
             {this.section("Next", this.props.project.nextSteps)}
             {this.maybeSources()}
         </div>
-        
     }
 
     maybeSources() {
@@ -68,9 +90,13 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
 
 const containerStyle: CSS.Properties = {
     display: "flex",
-    flexDirection: "column",
-    alignItems: "start",
-    border: "solid 1px"
+    flexDirection: "row",
+    backgroundColor: Color.lightBG,
+    margin: "12px",
+    padding: "12px",
+    borderRadius: "10px",
+    gap: "30px",
+    maxWidth: "600px"
 }
 
 const sourcesContainer: CSS.Properties = {
@@ -84,4 +110,11 @@ const sourceLink: CSS.Properties = {
     flexDirection: "row",
     alignItems: "center",
     gap: "10px"
+}
+
+const logoStyle: CSS.Properties = {
+    backgroundColor: "white",
+    mask: "url(icons/project1.svg) no-repeat center",
+    width: "40px",
+    height: "40px"
 }

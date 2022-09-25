@@ -1,7 +1,9 @@
 [
     {
         "id": 1,
+        "icon": "/icons/project1.svg",
         "name": "find.skorulis.com",
+        "shortBrief": "Find where I am",
         "brief": "This consists of 2 parts, an app that posts my location whenever I move and a website which allows people to know where I am. Also in case anyone wants to catch up for a drink it also calls out when I'm enjoying a beer",
         "status": "live",
         "nextSteps": "* Change the location marker when drinking",
@@ -18,7 +20,9 @@
     },
     {
         "id": 2,
+        "icon": "/icons/project2.svg",
         "name": "projects.skorulis.com",
+        "shortBrief": "Everything I'm working on",
         "brief": "This website to display the various projects that I'm working on.",
         "status": "started",
         "nextSteps": "* Make it not look shit",
