@@ -3,6 +3,7 @@ import './css/App.css';
 import { ProjectList } from './scene/ProjectList';
 import { ProjectDetails } from "./scene/ProjectDetails";
 import { Header } from "./scene/Header"
+import { PageNotFound} from "./scene/PageNotFound"
 
 import {
   BrowserRouter as Router,
@@ -26,6 +27,7 @@ export default class App extends Component<{}> {
         <Routes>
           <Route path="/" element={<ProjectList />} />
           <Route path="/project/:id" element={<ProjectDetailsWrapper />} />
+          <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   }
