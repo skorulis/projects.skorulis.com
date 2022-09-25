@@ -7,6 +7,7 @@
         "brief": "This consists of 2 parts, an app that posts my location whenever I move and a website which allows people to know where I am. Also in case anyone wants to catch up for a drink it also calls out when I'm enjoying a beer",
         "status": "live",
         "nextSteps": "* Change the location marker when drinking",
+        "tech": "* SwiftUI\n* React",
         "sourceCode": [
             {
                 "title": "Website",
@@ -25,6 +26,7 @@
         "shortBrief": "Everything I'm working on",
         "brief": "This website to display the various projects that I'm working on.",
         "status": "started",
+        "tech": "* React",
         "nextSteps": "* Make it not look shit",
         "sourceCode": [
             {
