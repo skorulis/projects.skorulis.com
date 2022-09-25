@@ -28,6 +28,6 @@ export class ProjectList extends Component<{}, {}> {
     // Computed values
 
     projects(): Project[] {
-        return data
+        return data.reverse()
     }
 }
