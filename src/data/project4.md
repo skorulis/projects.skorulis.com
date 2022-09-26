@@ -1,13 +1,11 @@
 ### Brief
 
-This consists of 2 parts, an app that posts my location whenever I move and a website which allows people to know where I am. Also in case anyone wants to catch up for a drink it also calls out when I'm enjoying a beer
+We constantly generate crumbs of data on the internet. What if we could take everything we do and create an event history timeline.
 
-### Next
+This would require gathering data from numerous sources and distilling each event down to a snipped which links back to the source.
 
-* Change the location marker when drinking
+### Issues
 
-### Tech
+* Even for my own uses this would require integrating with numerous systems some of which may not want to readily give up the data.
+* Even if the whole thing works, what use does it really provide? The information would only be mildy interesting to myself and probably not much at all to anyone else
 
-* SwiftUI
-* React
-* Firebase

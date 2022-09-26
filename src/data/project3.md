@@ -1,11 +1,14 @@
 ### Brief
 
-We constantly generate crumbs of data on the internet. What if we could take everything we do and create an event history timeline.
+This started as a facebook album where I was taking a photo of every new beer I drank and giving it a rating. The albums are good for sharing with friends but Facebook is terrible for browsing so I couldn't easily lookup whether I had already tried a certain beer.
 
-This would require gathering data from numerous sources and distilling each event down to a snipped which links back to the source.
+This project consisted of scripts of fetch all of the images from facebook and then combine them into a single website containing all of the beers I've tried.
 
-### Issues
+It also correlates the facebook text with Untappd beer records so I can pull down more details on the beer like style and country and use that to generate graphs
 
-* Even for my own uses this would require integrating with numerous systems some of which may not want to readily give up the data.
-* Even if the whole thing works, what use does it really provide? The information would only be mildy interesting to myself and probably not much at all to anyone else
+### Tech
 
+* Ruby
+* Jekyll
+* Facebook
+* Untappd
