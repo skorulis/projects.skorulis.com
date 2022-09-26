@@ -1,9 +1,9 @@
 import { Component } from "react"; 
-
-import data from "../data/projects.json"
-import { Project } from "../model/Project";
 import { ProjectCell } from "./ProjectCell";
 import { Header } from "./Header";
+import { DataProvider } from "../logic/DataProvider";
+
+const data = new DataProvider()
 
 export class ProjectList extends Component<{}, {}> {
 
@@ -17,17 +17,12 @@ export class ProjectList extends Component<{}, {}> {
         return <div>
             <Header />
             <div className="pageContent">
-                {this.projects().map( (proj) =>
-                    <ProjectCell project={proj}  />
+                {data.sortedProjects().map( (proj) =>
+                    <ProjectCell project={proj} key={`${proj.id}`}  />
                 )} 
             </div>
         </div>
         
     }
 
-    // Computed values
-
-    projects(): Project[] {
-        return data.reverse()
-    }
 }

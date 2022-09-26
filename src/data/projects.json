@@ -4,10 +4,8 @@
         "icon": "/icons/project1.svg",
         "name": "find.skorulis.com",
         "shortBrief": "Find where I am",
-        "brief": "This consists of 2 parts, an app that posts my location whenever I move and a website which allows people to know where I am. Also in case anyone wants to catch up for a drink it also calls out when I'm enjoying a beer",
+        "lastUpdate": "2022-09-24",
         "status": "live",
-        "nextSteps": "* Change the location marker when drinking",
-        "tech": "* SwiftUI\n* React\n* Firebase",
         "sourceCode": [
             {
                 "title": "Website",
@@ -24,10 +22,8 @@
         "icon": "/icons/project2.svg",
         "name": "projects.skorulis.com",
         "shortBrief": "Everything I'm working on",
-        "brief": "This website to display the various projects that I'm working on.",
         "status": "live",
-        "tech": "* React",
-        "nextSteps": "* Make this site look less shit\n* Add dates around when things started or were updated\n* Add historical screenshots",
+        "lastUpdate": "2022-09-26",
         "sourceCode": [
             {
                 "title": "Website",
@@ -40,15 +36,21 @@
         "icon": "/icons/project3.png",
         "name": "Big album of beers",
         "shortBrief": "Photographic evidence of every beer I've tried",
-        "brief": "I originally started logging the beers I had tried in facebook albums, this continues but is unwieldy to browse multiple facebook albums. BAOB scrapes all the images and data from facebook and collects it together into a single website for easy browsing. Once it has the data from facebook it pulls more info from Untappd in order to generate statistics on the beers",
         "status": "live",
-        "tech": "* Ruby\n* Jekyll\n* Facebook\n* Untappd",
-        "nextSteps": "* Keep uploading beers",
+        "lastUpdate": "2022-09-21",
         "sourceCode": [
             {
                 "title": "Website/Scripts",
                 "url": "https://github.com/skorulis/BigAlbumOfBeers"
             }
         ]
+    },
+    {
+        "id": 4,
+        "icon": "/icons/unknown.svg",
+        "name": "Life log",
+        "shortBrief": "A list of everything you do",
+        "status": "idea",
+        "lastUpdate": "2022-09-26"
     }
 ]

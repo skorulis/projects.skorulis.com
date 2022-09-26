@@ -4,24 +4,28 @@ import {Color} from "../Theme"
 import { Header } from "./Header";
 import { Project } from "../model/Project"
 import ReactMarkdown from 'react-markdown'
-import data from "../data/projects.json"
 import githubLogo from "./github-icon.png"
 import { ProjectImage } from "./ProjectImage";
+
+import { DataProvider } from "../logic/DataProvider";
+
+const data = new DataProvider()
 
 type ProjectDetailsProps = {
     id: number
 }
 
-export class ProjectDetails extends Component<ProjectDetailsProps, {}> {
+export class ProjectDetails extends Component<ProjectDetailsProps, {details?: string}> {
 
     constructor(props: ProjectDetailsProps) {
         super(props);
+        this.state = {}
     }
 
     // Rendering
 
     render() {
-        let project = this.project()
+        let project = data.project(this.props.id)
         return <div>
             <Header />
             <div>
@@ -47,9 +51,7 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {}> {
                 <ProjectImage url={project.icon} />
                 <h2><span className="number">{this.numberString()}</span> {project.name}</h2>
             </div>
-            {this.section("Brief", project.brief)}
-            {this.section("Next", project.nextSteps)}
-            {this.section("Tech", project.tech)}
+            {this.maybeDetails()}
             {this.maybeSources(project)}
         </div>
     }
@@ -60,13 +62,21 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {}> {
         </div>
     }
 
+    maybeDetails() {
+        let text = this.state.details
+        if (!text) {
+            return
+        }
+        return <ReactMarkdown children={text} />
+    }
+
     maybeSources(project: Project) {
         let sources = project.sourceCode
         if (!sources || sources.length == 0) {
             return
         }
         let items = sources.map( (source) => {
-            return <a href={source.url}>
+            return <a href={source.url} key={source.url}>
                 <div style={sourceLink} >
                     <img src={githubLogo} width={20} /> 
                     {source.title}
@@ -85,29 +95,21 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {}> {
         return 
     }
 
-    section(title: string, body: string) {
-        return <div>
-            <h3>{title}</h3>
-            <ReactMarkdown children={body} />
-        </div>
-    }
+    // Lifecycle
+
+    async componentDidMount() {
+        const markdownPath = require(`../data/project${this.props.id}.md`);
+        let result = await fetch(markdownPath)
+        let text = await result.text()
+        this.setState({details: text})
+        console.log(text)
+        
+    }   
 
     // Computed values
 
     numberString() {
         return `#${this.props.id}`
-    }
-
-    project(): Project | undefined {
-        let matches = this.projects().filter(x => x.id == this.props.id )
-        if (matches.length == 0) {
-            return undefined
-        }
-        return matches[0];
-    }
-
-    projects(): Project[] {
-        return data
     }
 
 }

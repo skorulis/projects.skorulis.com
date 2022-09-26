@@ -3,10 +3,8 @@ export interface Project {
     icon: string
     name: string
     shortBrief: string
-    brief: string
     status: string
-    nextSteps: string
-    tech: string
+    lastUpdate: string
     sourceCode?: SourceCode[]
 }
 
