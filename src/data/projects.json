@@ -52,5 +52,13 @@
         "shortBrief": "A list of everything you do",
         "status": "idea",
         "lastUpdate": "2022-09-26"
+    },
+    {
+        "id": 5,
+        "icon": "/icons/project5.png",
+        "name": "Personal Best",
+        "shortBrief": "Track how good you are at anything",
+        "status": "idea",
+        "lastUpdate": "2022-09-26"
     }
 ]
