@@ -7,7 +7,8 @@ This website you're looking at right now dispalys the various projects that I'm 
 * Make this site look less shit
     * Investigate using Tailwind for this
 * Add dates around when things started or were updated
-* Add historical screenshots
+* Improve historical screenshots
+* Add analytics 
 
 
 ### Tech

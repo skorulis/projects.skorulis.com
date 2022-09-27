@@ -6,7 +6,7 @@ import { Header } from "./scene/Header"
 import { PageNotFound} from "./scene/PageNotFound"
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   useParams
