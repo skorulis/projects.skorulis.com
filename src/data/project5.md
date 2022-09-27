@@ -10,6 +10,11 @@ There's a few other apps out there that do this, but the bar isn't too high.
 
 * Build an offline version capable of tracking arbitrary activities
 
+### Future possibilities
+
+* Social interaction and sharing data between devices
+* Expanding to be a general exercise tracker
+
 ### Tech
 
 * SwiftUI
