@@ -8,6 +8,8 @@ import githubLogo from "./github-icon.png"
 import { ProjectImage } from "./ProjectImage";
 
 import { DataProvider } from "../logic/DataProvider";
+import Carousel from 'react-gallery-carousel';
+import 'react-gallery-carousel/dist/index.css';
 
 const data = new DataProvider()
 
@@ -35,6 +37,18 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {details?: st
         </div>
     }
 
+    carousel(project: Project) {
+        let images = project.images.map( (string) => {
+            return {
+                src: `/images/${string}`
+            }
+        }).reverse()
+        return <div>
+            <h2>Screenshots</h2>
+            <Carousel images={images} style={{ height: 1728, width: 700 }} />
+        </div>
+    }
+
     maybeEmptyContent(project?: Project) {
         if (project) {
             return
@@ -53,6 +67,7 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {details?: st
             </div>
             {this.maybeDetails()}
             {this.maybeSources(project)}
+            {this.carousel(project)}
         </div>
     }
 
@@ -102,8 +117,6 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {details?: st
         let result = await fetch(markdownPath)
         let text = await result.text()
         this.setState({details: text})
-        console.log(text)
-        
     }   
 
     // Computed values
