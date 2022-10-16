@@ -62,8 +62,8 @@
         "icon": "/icons/project5.png",
         "name": "Personal Best",
         "shortBrief": "Track how good you are at anything",
-        "status": "started",
-        "lastUpdate": "2022-09-28",
+        "status": "preAlpha",
+        "lastUpdate": "2022-10-16",
         "images": [
             "project5-20221027.png",
             "project5-20221028.png",

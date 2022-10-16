@@ -17,6 +17,9 @@ export interface SourceCode {
 export enum Status {
     idea = "idea",
     started = "started",
+    preAlpha = "preAlpha",
+    alpha = "alpha",
+    beta = "beta",
     live = "live",
     hiatus = "hiatus",
     abandoned = "abandoned"

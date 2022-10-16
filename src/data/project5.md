@@ -19,3 +19,4 @@ There's a few other apps out there that do this, but the bar isn't too high.
 
 * SwiftUI
 * SwiftUI charts
+* Core data
