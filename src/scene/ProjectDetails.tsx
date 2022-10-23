@@ -43,6 +43,9 @@ export class ProjectDetails extends Component<ProjectDetailsProps, {details?: st
                 src: `/images/${string}`
             }
         }).reverse()
+        if (images.length == 0) {
+            return;
+        }
         return <div>
             <h2>Screenshots</h2>
             <Carousel images={images} style={{ height: 1728, width: 700 }} />

@@ -75,5 +75,17 @@
                 "url": "https://github.com/skorulis/PersonalBest"
             }
         ]
+    },
+    {
+        "id": 6,
+        "icon": "/icons/unknown.svg",
+        "name": "Mood tracker",
+        "shortBrief": "Keep track of your mood over time",
+        "status": "idea",
+        "lastUpdate": "2022-10-23",
+        "images": [],
+        "sourceCode": [
+            
+        ]
     }
 ]
