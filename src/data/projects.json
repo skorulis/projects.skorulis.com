@@ -87,5 +87,17 @@
         "sourceCode": [
             
         ]
+    },
+    {
+        "id": 7,
+        "icon": "/icons/unknown.svg",
+        "name": "Regiment",
+        "shortBrief": "Keep on track by setting up a regiment",
+        "status": "idea",
+        "lastUpdate": "2022-11-11",
+        "images": [],
+        "sourceCode": [
+            
+        ]
     }
 ]
