@@ -1,5 +1,5 @@
 import { Component } from "react"; 
-import { Project } from "../model/Project";
+import { Project, Status } from "../model/Project";
 import CSS from 'csstype';
 import { Color } from "../Theme"
 
@@ -32,7 +32,7 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
             <ProjectImage url={this.props.project.icon} />
             <div >
                 <h2><span className="number">{this.numberString()}</span> {this.props.project.name}</h2>
-                <p>Status: <b>{this.props.project.status}</b></p>
+                {this.status()}
                 <p>{this.props.project.shortBrief}</p>
             </div>
             <img src={"assets/chevron.svg"} width={32} className="logoColor" style={arrowStyle}  />
@@ -40,10 +40,33 @@ export class ProjectCell extends Component<ProjectCellProps, {}> {
         </div>
     }
 
+    status() {
+        return <p>Status: <b>{this.props.project.status} {this.statusIcon()}</b></p>
+    }
+
     // Computed values
 
     numberString() {
         return `#${this.props.project.id}`
+    }
+
+    statusIcon(): string {
+        switch (this.props.project.status) {
+            case Status.idea:
+                return "💡"
+            case Status.started:
+                return "🚧"
+            case Status.preAlpha:
+                return "(α)"
+            case Status.alpha:
+                return "(α)"
+            case Status.beta:
+                return "(β)"
+            case Status.live:
+                return "⚡"
+            default:
+                return ""
+        }
     }
 
 }

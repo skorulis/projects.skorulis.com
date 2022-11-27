@@ -23,4 +23,5 @@ export enum Status {
     live = "live",
     hiatus = "hiatus",
     abandoned = "abandoned"
+
 }

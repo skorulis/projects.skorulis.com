@@ -81,7 +81,7 @@
         "icon": "/icons/unknown.svg",
         "name": "Mood tracker",
         "shortBrief": "Keep track of your mood over time",
-        "status": "idea",
+        "status": "started",
         "lastUpdate": "2022-10-23",
         "images": [],
         "sourceCode": [
