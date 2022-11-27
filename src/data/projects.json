@@ -99,5 +99,17 @@
         "sourceCode": [
             
         ]
+    },
+    {
+        "id": 8,
+        "icon": "/icons/reddit-round-color-icon.svg",
+        "name": "r/skorulis",
+        "shortBrief": "Reddit community for this site",
+        "status": "live",
+        "lastUpdate": "2022-11-27",
+        "images": [],
+        "sourceCode": [
+            
+        ]
     }
 ]
