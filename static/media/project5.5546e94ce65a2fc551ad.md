@@ -6,14 +6,15 @@ If you want to get better at something it's important to keep track of where you
 
 There's a few other apps out there that do this, but the bar isn't too high.
 
-### Next
+### Prioritised backlog
 
-* Build an offline version capable of tracking arbitrary activities
+* Show the number of reps on the main page instead of just weight
+* Show graphs for volume and variant records
+* Allow adding new activities
 
 ### Future possibilities
 
 * Social interaction and sharing data between devices
-* Expanding to be a general exercise tracker
 
 ### Tech
 
