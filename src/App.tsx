@@ -18,6 +18,9 @@ export default class App extends Component<{}> {
     return (
       <div className='main'>
         {this.router()}
+        <footer className="mainFooter">
+          Copyright © Alex Skorulis
+        </footer>
       </div>
     );
   }

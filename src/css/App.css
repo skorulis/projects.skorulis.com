@@ -23,3 +23,8 @@ span.number {
 .rightElement {
   margin-left: auto;
 }
+
+.mainFooter {
+  background: rgba(255, 255, 255, .05);
+  padding: 20px;
+}
