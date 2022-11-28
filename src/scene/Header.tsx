@@ -2,6 +2,10 @@ import { Component } from "react";
 import CSS from 'csstype';
 import {Color} from "../Theme"
 
+import {
+    Link as RouteLink
+} from "react-router-dom";
+
 export class Header extends Component<{}, {}> {
 
     constructor(props: {}) {
@@ -14,6 +18,10 @@ export class Header extends Component<{}, {}> {
         return <header style={containerStyle}>
             <h1 style={headerLabel}>
                 <a href="/">Projects</a>
+
+                <RouteLink to="/about" >
+                    About
+                </RouteLink>
             </h1>
       </header>
     }
@@ -26,5 +34,7 @@ const containerStyle: CSS.Properties = {
 
 const headerLabel: CSS.Properties = {
     padding: "20px",
-    margin: 0
+    margin: 0,
+    display: "flex",
+    justifyContent: "space-between"
 }

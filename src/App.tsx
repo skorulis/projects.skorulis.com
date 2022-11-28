@@ -2,14 +2,14 @@ import { Component } from "react";
 import './css/App.css';
 import { ProjectList } from './scene/ProjectList';
 import { ProjectDetails } from "./scene/ProjectDetails";
-import { Header } from "./scene/Header"
+import { About } from "./scene/About";
 import { PageNotFound} from "./scene/PageNotFound"
 
 import {
   HashRouter as Router,
   Route,
   Routes,
-  useParams
+  useParams,
 } from "react-router-dom";
 
 export default class App extends Component<{}> {
@@ -19,7 +19,7 @@ export default class App extends Component<{}> {
       <div className='main'>
         {this.router()}
         <footer className="mainFooter">
-          Copyright © Alex Skorulis
+          Copyright © Alex Skorulis          
         </footer>
       </div>
     );
@@ -29,6 +29,7 @@ export default class App extends Component<{}> {
     return <Router>
         <Routes>
           <Route path="/" element={<ProjectList />} />
+          <Route path="/about" element={<About />} />
           <Route path="/project/:id" element={<ProjectDetailsWrapper />} />
           <Route path="*" element={<PageNotFound />} />
       </Routes>
