@@ -5,6 +5,7 @@
         "name": "find.skorulis.com",
         "shortBrief": "Find where I am",
         "lastUpdate": "2022-09-24",
+        "startDate":"2022-06-04",
         "status": "live",
         "images": [],
         "sourceCode": [
@@ -25,6 +26,7 @@
         "shortBrief": "Everything I'm working on",
         "status": "live",
         "lastUpdate": "2022-09-26",
+        "startDate":"2022-09-24",
         "images": [],
         "sourceCode": [
             {
@@ -40,6 +42,7 @@
         "shortBrief": "Photographic evidence of every beer I've tried",
         "status": "live",
         "lastUpdate": "2022-09-21",
+        "startDate":"2012-10-13",
         "images": [],
         "sourceCode": [
             {
@@ -64,6 +67,7 @@
         "shortBrief": "Track how good you are at anything",
         "status": "preAlpha",
         "lastUpdate": "2022-10-16",
+        "startDate":"2012-09-26",
         "images": [
             "project5-20221027.png",
             "project5-20221028.png",
@@ -83,6 +87,7 @@
         "shortBrief": "Keep track of your mood over time",
         "status": "started",
         "lastUpdate": "2022-10-23",
+        "startDate":"2012-10-24",
         "images": [],
         "sourceCode": [
             
@@ -107,6 +112,7 @@
         "shortBrief": "Reddit community for this site",
         "status": "live",
         "lastUpdate": "2022-11-27",
+        "startDate":"2012-09-24",
         "images": [],
         "sourceCode": [
             

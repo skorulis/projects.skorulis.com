@@ -5,6 +5,7 @@ export interface Project {
     shortBrief: string
     status: string
     lastUpdate: string
+    startDate?: string
     images: string[]
     sourceCode?: SourceCode[]
 }
