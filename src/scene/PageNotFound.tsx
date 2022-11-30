@@ -3,10 +3,6 @@ import { Header } from "./Header";
 
 export class PageNotFound extends Component<{}, {}> {
 
-    constructor(props: {}) {
-        super(props);
-    }
-
     // Rendering
 
     render() {

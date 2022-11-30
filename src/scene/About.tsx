@@ -3,10 +3,6 @@ import { Header } from "./Header";
 
 export class About extends Component<{}, {}> {
 
-    constructor(props: {}) {
-        super(props);
-    }
-
     // Rendering
 
     render() {

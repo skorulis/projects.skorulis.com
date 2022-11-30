@@ -18,8 +18,8 @@ export class DataProvider {
     }
 
     project(id: number): Project | undefined {
-        let matches = this.projects().filter(x => x.id == id )
-        if (matches.length == 0) {
+        let matches = this.projects().filter(x => x.id === id )
+        if (matches.length === 0) {
             return undefined
         }
         return matches[0];

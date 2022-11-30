@@ -129,5 +129,18 @@
         "sourceCode": [
             
         ]
+    },
+    {
+        "id": 10,
+        "icon": "/icons/unknown.svg",
+        "name": "Bevmas calendar",
+        "shortBrief": "Yearly christmas album of advent calendar beers",
+        "status": "live",
+        "lastUpdate": "2022-12-01",
+        "startDate":"2018-12-01",
+        "images": [],
+        "sourceCode": [
+            
+        ]
     }
 ]
