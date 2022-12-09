@@ -142,5 +142,17 @@
         "sourceCode": [
             
         ]
+    },
+    {
+        "id": 11,
+        "icon": "/icons/unknown.svg",
+        "name": "metrics.skorulis.com",
+        "shortBrief": "Public metrics for things in my life",
+        "status": "idea",
+        "lastUpdate": "2022-12-10",
+        "images": [],
+        "sourceCode": [
+            
+        ]
     }
 ]
