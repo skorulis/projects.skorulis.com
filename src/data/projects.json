@@ -145,7 +145,7 @@
     },
     {
         "id": 11,
-        "icon": "/icons/unknown.svg",
+        "icon": "/icons/metrics.svg",
         "name": "metrics.skorulis.com",
         "shortBrief": "Public metrics for things in my life",
         "status": "idea",
